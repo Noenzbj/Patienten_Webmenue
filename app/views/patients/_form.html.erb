@@ -1,0 +1,49 @@
+<div class="container mt-1">
+  <div class = "row justify-content-center text-white ">
+    <div class = "col-10 ">
+      <%= render  "shared/errors",obj: @patient %>
+      <%= form_with(model: @patient, class: "shadow p-3 mb-3 bg-box rounded", local: true) do |f| %>
+      
+      <div class="form-group ">   
+        <div class="col-10">
+          <%= f.text_field :first_name, class: "form-control shadow rounded", placeholder: "Vorname" %>
+        </div>
+      </div>
+
+            <div class="form-group ">   
+        <div class="col-10">
+          <%= f.text_field :last_name, class: "form-control shadow rounded", placeholder: "Nachname" %>
+        </div>
+      </div>
+
+        <div class="form-group ">   
+            <div class="col-10 text-secondary">
+               <%= f.select :station, options_for_select([
+                        ["Station", ""], 
+                        "1", 
+                        "2", 
+                        "3", 
+                        "4", 
+                        "5",
+                        "6",
+                        "7"]), 
+                        {}, { class: "form form-group form-control shadow" } %>
+
+            </div>
+        </div>
+
+            <div class="form-group">   
+
+        <div class="col-10">
+          <%= f.text_field :room, class: "form-control shadow rounded", placeholder: "Raum" %>
+        </div>
+      </div>
+
+        <%= f.submit :value => "Okay", class: "btn ml-3 bg-bdh text-white "  %>
+        
+      </div>
+       
+      <%end%>
+    </div>
+  </div>
+</div>

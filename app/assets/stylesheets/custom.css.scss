@@ -1,0 +1,57 @@
+@import 'bootstrap/dist/css/bootstrap';
+ 
+.navbar{
+    color: white !important;
+}
+.active{
+    color: #df7f01 !important;
+}
+.dropdown-menu a{
+    color: #111111 !important;
+}
+.dropdown-menu a:hover{
+    background: #014464!important;
+    background: linear-gradient(left, #f8ba73, #ee7f01);
+    background: -moz-linear-gradient(left, #f8ba73, #ee7f01)!important;
+    background: -webkit-gradient(linear, 100% 100%, 0% 0%, from(#f8ba73), to(#ee7f01))!important;
+    color: #f8f9fa !important;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; 
+}
+.bg-bdh{
+    background-color: #ee7f01;
+}
+.bg-box{
+    background-color:#ebebeb;
+}
+.btn-outline-success{
+    color: #ee7f01;
+    border-color: #ee7f01;
+}
+
+.btn-outline-success:hover {
+    color: white;
+    background-color: #ee7f01;
+    border-color: #ee7f01
+}
+
+h1, .h1Editor {
+    font-size: 60px;
+    font-family: Open Sans, Arial, Sans-serif, Helvetica;
+    line-height: 125%;
+    font-weight: 300;
+    color: #333333;
+    padding: 0;
+    margin: 0 0 16px 0;
+}
+h4, .h4Editor {
+    font-size: 24px;
+    font-family: Open Sans, Arial, Sans-serif, Helvetica;
+    line-height: 125%;
+    font-weight: 400;
+    color: #9a9a9a;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+

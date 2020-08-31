@@ -1,0 +1,28 @@
+<div id="page-content">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-8 mt-4">
+        <div class="card text-center shadow mb-5 bg-white rounded">
+          <div class="card-header font-italic border-bottom-1">
+            erstellt von <%= '#' %>
+           
+          </div>
+          <div class="card-body ">
+            <h4 class="card-title text-center"><%= @patient.first_name + " " + @patient.last_name%></h4>
+
+            <div class="card-text text-center">Station: <%= @patient.station%></div>
+            <div class="card-text text-center mb-4">Raum: <%= @patient.room%></div>
+           
+            <%= link_to "Bearbeiten", edit_patient_path(@patient), class: "btn btn-outline-success" %>
+            <%= link_to "Löschen", patient_path(@patient), class: "btn btn-outline-danger", method: :delete, data: {confirm: "Are you sure?"} %>
+            
+          </div>
+          <div class="card-footer text-muted">
+            <small>erstellt am <%= @patient.created_at %>, 
+            zuletzt bearbeitet am <%= @patient.updated_at %></small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
